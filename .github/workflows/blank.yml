@@ -38,4 +38,8 @@ jobs:
           echo test, and deploy your project.
       - name: Git Semantic Version
         uses: PaulHatch/semantic-version@v5.0.0-alpha2
+        id: version
+      - name: Print version
+        run: |
+          echo "The version is ${{ steps.version.outputs.version_tag }}"
     
