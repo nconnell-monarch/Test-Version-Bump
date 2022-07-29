@@ -10,7 +10,7 @@ jobs:
     environment:
       name: staging
       url: https://github.com
-     steps:
-      - name: deploy
-        run: |
-          echo "Deployed to stage"
+    steps:
+     - name: deploy
+       run: |
+         echo "Deployed to stage"
