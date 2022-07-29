@@ -41,5 +41,6 @@ jobs:
         id: version
       - name: Print version
         run: |
-          echo "The version is ${{ steps.version.outputs.version_tag }}"
+          echo "The version is ${{ steps.version.outputs.major }}.${{ steps.version.outputs.minor }}.${{ steps.version.outputs.patch }}"
+          echo ${{ github.sha }}
     
